@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: #3f3d56;
+  overflow-x: hidden;
+}
+#nightbg {
+  position: absolute;
+  z-index: -4;
+  top: 4vh;
+  left: 0;
+  width: 100vw;
+}
+
+#tree1 {
+  animation: scene 3s linear infinite;
+}
+#tree2 {
+  animation: scene 5s linear infinite;
+}
+#tree3 {
+  animation: scene 6s linear infinite;
+}
+#tree4 {
+  animation: scene 10s linear infinite;
+}
+#tree5 {
+  animation: scene 6s linear infinite;
+}
+#tree6 {
+  animation: scene 9s linear infinite;
+}
+#tree7 {
+  animation: scene 8s linear infinite;
+}
+#tree8 {
+  animation: scene 7s linear infinite;
+}
+#tree9 {
+  animation: scene 0.5s linear infinite;
+}
+#car {
+  width: 40%;
+  margin-top: 30%;
+  position: relative;
+  left: 15vw;
+}
+#lightning {
+  position: absolute;
+  width: 35%;
+  left: 13vw;
+  bottom: 4vh;
+}
+.road {
+  position: absolute;
+  top: 85%;
+  left: -10vw;
+  width: 130vw;
+  height: 6vh;
+  border: 0.4vh #dadff7 solid;
+  border-left: 0;
+  border-right: 0;
+  background-color: #232c33;
+  z-index: -1;
+  overflow-x: hidden;
+  transform: perspective(1em) rotateX(10deg);
+}
+.whitemark {
+  position: absolute;
+  top: 30%;
+  background-color: white;
+  width: 10vw;
+  height: 0.8vh;
+  z-index: 1;
+  animation: swiss 0.8s linear infinite;
+}
+#fwheel {
+  animation: wheel 0.1s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#rwheel {
+  animation: wheel 0.1s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#carbody {
+  animation: vroom 0.5s linear alternate infinite;
+}
+
+.nighttheme {
+  transition: all 0.4s ease-in;
+  fill: #a48d8d;
+}
+.nightwhite {
+  transition: all 0.4s ease-in;
+  fill: #fcfdf9;
+}
+.nightred {
+  transition: all 0.4s ease-in;
+  fill: #b70b0b;
+}
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(360deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes vroom {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(5deg);
+  }
+}
+@keyframes swiss {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes scene {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(100%);
+  }
+}
