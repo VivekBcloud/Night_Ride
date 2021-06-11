@@ -11,8 +11,9 @@ body {
 #nightbg {
   position: absolute;
   z-index: -4;
-  top: 4vh;
-  left: 0;
+  top: 5vh;
+  left: -10vw;
+  zoom: 120%;
   width: 100vw;
 }
 
@@ -45,15 +46,16 @@ body {
 }
 #car {
   width: 40%;
-  margin-top: 30%;
-  position: relative;
-  left: 15vw;
+  /* margin-top: 30vh; */
+  position: absolute;
+  left: 47vw;
+  bottom: 7vh;
 }
 #lightning {
   position: absolute;
   width: 35%;
-  left: 13vw;
-  bottom: 4vh;
+  left: 15vw;
+  bottom: 7.5vh;
 }
 .road {
   position: absolute;
